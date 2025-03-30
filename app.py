@@ -26,7 +26,7 @@ if st.button("相談"):
     llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
     messages = [
         SystemMessage(content=f"あなたは{selected_item}です。"),
-        HumanMessage(content=f"{input_message}}"),
+        HumanMessage(content=f"{input_message}"),
     ]
     result = llm(messages)
     st.write(result.content)
