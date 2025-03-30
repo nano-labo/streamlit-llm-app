@@ -29,4 +29,6 @@ if st.button("相談"):
         HumanMessage(content="{input_message}}"),
     ]
     result = llm(messages)
-    st.write(print(result.content))
+    st.write(type(result.content))
+    st.write(result.content)
+    st.write(result.content)
