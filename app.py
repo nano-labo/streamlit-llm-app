@@ -30,5 +30,5 @@ if st.button("相談"):
     ]
     result = llm(messages)
     st.write(type(result.content))
-    st.write(result.content)
+    st.write(result)
     st.write(result.content)
